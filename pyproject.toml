@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anime-recommender"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "langchain",
+  "langchain_text_splitters",
+  "langchain-community",
+  "langchain_groq",
+  "chromadb",
+  "streamlit",
+  "pandas",
+  "python-dotenv",
+  "sentence-transformers",
+  "langchain_huggingface",
+  "langchain_classic"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
